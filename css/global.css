@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: beige;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+}
+
+#calc {
+    width: 400px;
+    padding: .5em;
+    background-color: burlywood;
+    color: blue;
+    display: flex;
+    flex-direction: column;
+}
+
+#calc h3 {
+    font-size: .8em;
+    font-weight: 300;
+    color: black;
+}
+
+#operacoes {
+    text-align: right;
+}
+
+#operacao-anterior,
+#operacao-atual {
+    padding: 0.2rem;
+    overflow-wrap: break-word;
+    min-height: 1.6rem;
+}
+
+#operacao-anterior {
+    color: black;
+}
+
+#operacao-atual {
+    font-size: 3em;
+    font-weight: 700;
+    color: black;
+}
+
+#container-de-botoes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+#container-de-botoes button {
+    border: 1px solid transparent;
+    border-radius: 0;
+    height: 4em;
+    font-size: 1.2em;
+    background-color: wheat;
+    cursor: pointer;
+}
+
+#container-de-botoes .numero {
+    background-color: whitesmoke;
+}
+
+#container-de-botoes button:hover {
+    background-color: yellow;
+    border-color: bisque;
+}
+
+#container-de-botoes #botao-de-igual {
+    grid-column: span 2;
+    background-color: blueviolet;
+}
